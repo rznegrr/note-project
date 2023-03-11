@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Note</title>
+  </head>
+
+  <body>
+    <div class="darker_screen" id="darker-screen"> 
+      <!-- here we set small_box (when client write note) -->
+      <div class="m-auto mt-10 w-80 md:w-96 lg:w-2/6 custom-box bg-note relative">
+        <input class="form-style text-lg font-semibold text-gray-200 hidden bg-note" placeholder="Title" id="small_box-title" />
+        <textarea class="form-style text-base text-white font-medium overflow-hidden inline-block bg-note" placeholder="Take a note.." id="small_box-desc"></textarea> 
+        <button class="text-sm text-gray-300 text-right hover:opacity-80 w-100 hidden absolute bottom-2 bg-note right-0 px-4" id="btn-done"> Done </button>
+      </div>
+      <!-- here we set medium box (when client clicked done btn and note put here) -->
+      <div class="grid grid-cols-12" id="set_mediumBox"></div>
+    </div>
+    <!-- here we set large_box for show note larger -->
+    <div id="set_large_box"></div>
+    <p id="demo"></p>
+    <script src="./script.js"></script>
+  </body>
+</html>

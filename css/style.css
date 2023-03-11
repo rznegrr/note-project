@@ -1,0 +1,71 @@
+.darker_screen {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)),
+    url(../images/pexels-james-wheeler-1542493.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+[contenteditable] {
+  outline: 0px solid transparent;
+}
+
+.active-darker {
+  filter: brightness(40%);
+  pointer-events: none;
+  user-select: none;
+}
+
+#large_box {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgb(65, 65, 65);
+  border-radius: 8px;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.bg-note {
+  background-color: rgba(8, 8, 8, 0.1);
+}
+
+.form-style {
+  padding: 10px 15px 0 15px;
+  width: 100%;
+}
+
+.custom-box {
+  background-color: rgba(8, 8, 8, 0.5);
+  border: 1px solid rgba(107, 107, 107, 0.863);
+  border-radius: 8px;
+}
+
+.form-style::placeholder {
+  color: #c0c0c0;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.582);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2e2e2eec;
+  border-radius: 10px;
+}
